@@ -1,0 +1,10 @@
+# Weights and caches never belong in git (GitHub file limit is 100 MB;
+# the K3 weights are ~1.56 TB). They live on the serving host's disks.
+*.safetensors
+*.bin
+*.gguf
+weights/
+models/
+data/
+.env
+__pycache__/
